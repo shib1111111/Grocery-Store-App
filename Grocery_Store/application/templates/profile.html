@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+</head>
+<body>
+    <h1>Profile</h1>
+    <div class="header">
+        <nav>
+        <li><a href="{{ url_for('user_views.home') }}"class="user_page" >Home</a></li>
+        <li><a href="{{ url_for('user_views.profile') }}"class="profile">Proflie</a></li>
+        {% if curr_user.is_authenticated and curr_user.username == admin_username %}
+        <li><a href="{{ url_for('admin_views.admin_home') }}" class="admin_dashboard">Admin Page</a></li>
+        {% endif %}
+        <li><a href="{{ url_for('user_views.cart') }}"class="cart">Cart</a></li>
+        <li><a href="{{ url_for('authentication.logout') }}"class="logout">Logout</a></li>
+        
+    </nav>
+    </div>
+
+    <div>
+        <p style="font-weight: bold;">user name : {{curr_user.username}}</p>
+        {% if curr_user.is_authenticated and curr_user.username == admin_username %}
+        <p style="font-weight: bold; color: red;">user status : admin</p>
+        {% else %}
+        <p style="font-weight: bold; color: green;">user status : normal user</p>
+        {% endif %}
+    </div>
+    
+    <h2>Orders:</h2>
+    <div class="order-cards">
+        {% for order_detail in order_details %}
+        <div class="order-card">
+            <p class="order-info">Order Date: {{ order_detail.order_date }}</p>
+            <p class="order-info">Total Order Value: &#8377; {{ order_detail.total_price }}</p>
+            <ul class="order-items-list">
+                {% for item in order_detail.order_items %}
+                <li class="order-item">Product Name: {{ item.product_name }}, Quantity: {{ item.quantity }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

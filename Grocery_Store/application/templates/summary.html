@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+</head>
+<body>
+    <h1>Summary</h1>
+    <div class="header">
+        <nav>
+        <li><a href="{{ url_for('admin_views.admin_home') }}"class="admin_dashboard">Home</a></li>
+        <li><a href="{{ url_for('authentication.logout') }}"class="logout">Logout</a></li>
+        </nav>
+    </div>
+    
+    <h2 style="background-color: rgb(137, 247, 98); color: rgb(18, 14, 235);">Product Wise Analysis</h2>
+    <img src="{{ url_for('static', filename='summary/product_price_distribution.png')}}">
+    <img src="{{ url_for('static', filename='summary/stock_availability_per_product.png')}}">
+    <img src="{{ url_for('static', filename='summary/sales_volume_for_each_product.png') }}">
+
+    <h2 style="background-color: rgb(137, 247, 98); color: rgb(18, 14, 235);">Category Wise Analysis</h2>
+
+    <img src="{{ url_for('static', filename='summary/category_wise_product_distribution.png') }}">
+    <img src="{{ url_for('static', filename='summary/stock_availability_per_category.png') }}">
+    <img src="{{ url_for('static', filename='summary/sales_volume_for_each_category.png')}}">
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Our Grocery Store</h1>
+    <div class="header">
+        <nav>
+        <li><a href="{{ url_for('user_views.home') }}"class="user_page" >Home</a></li>
+        {% if curr_user.is_authenticated and curr_user.username == admin_username %}
+        <li><a href="{{ url_for('admin_views.admin_home') }}" class="admin_dashboard">Admin Page</a></li>
+        {% endif %}
+        <li><a href="{{ url_for('user_views.profile') }}"class="profile">Proflie</a></li>
+        <li><a href="{{ url_for('user_views.cart') }}"class="cart">Cart</a></li>
+        <li><a href="{{ url_for('authentication.logout') }}"class="logout">Logout</a></li>
+    </nav>
+    </div>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="flash-messages">
+            {% for message in messages %}
+                <div class="flash-message">{{ message }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% endwith %}
+
+    <div class="content">
+        <h2>Categories</h2>
+        <ul id="categoryList">
+            {% for category in categories %}
+                <li class="category-tab">{{ category.category_name }}</li>
+                <div class="content">
+                    <ul id="productList">
+                        {% for product in products %}
+                            {% if product.category_id == category.category_id %}
+                                <h3>{{ product.product_name }}</h3>
+                                <p>Price per Quantity: ₹{{ product.price }}</p>
+                                <p>Available Quantity: {{ product.stock_quantity }}</p>
+                                <form method="post" action="{{ url_for('user_views.add_to_cart') }}">
+                                    <input type="hidden" name="product_id" value="{{ product.product_id }}">
+                                    <input type="number" name="quantity" min="1" max="{{ product.stock_quantity }}" placeholder="Quantity">
+                                    <button type="submit">Add to Cart</button>
+                                </form>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

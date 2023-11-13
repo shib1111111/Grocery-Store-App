@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_style.css') }}">
+</head>
+<body class= "background" >
+  <div class="container">
+    <h1 id="loginHeader">Login</h1>
+
+    <form id="loginForm" action="{{ url_for('authentication.login') }}" method="POST">
+      <input type="text" name="username" id="username" placeholder="Username" autocomplete="username" required>
+      <input type="password" name="password" id="password" placeholder="Password" autocomplete="current-password" required>
+      
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flash-messages">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+      <button type="submit" id="loginButton">Login</button>
+      <button type="submit" name="register" value="true" id="registerButton">Register</button>
+    </form>
+  </div>
+</body>
+</html>
