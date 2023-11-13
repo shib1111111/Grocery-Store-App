@@ -3,6 +3,8 @@
 <head>
     <title>Grocery Store</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signature.css') }}">
+
 </head>
 <body>
     <h1>Summary</h1>
@@ -23,5 +25,12 @@
     <img src="{{ url_for('static', filename='summary/category_wise_product_distribution.png') }}">
     <img src="{{ url_for('static', filename='summary/stock_availability_per_category.png') }}">
     <img src="{{ url_for('static', filename='summary/sales_volume_for_each_category.png')}}">
+
+    <!-- Signature Container -->
+    <div class="signature-container">
+        <div class="signature">
+            Made with ❤️ by Shib Kumar Saraf
+        </div>
+    </div>
 </body>
 </html>
