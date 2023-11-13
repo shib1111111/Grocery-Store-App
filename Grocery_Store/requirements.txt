@@ -4,3 +4,4 @@ SQLAlchemy
 Flask-WTF
 gunicorn
 flask_sqlalchemy
+matplotlib
