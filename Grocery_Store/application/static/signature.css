@@ -1,20 +1,20 @@
 /* Styles for the signature */
 .signature-container {
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-padding: 1rem 0;
+  position: fixed; /* Change from absolute to fixed */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center; /* Center the text */
 }
 
 .signature {
-font-size: 1rem;
-font-style: italic;
-text-align: center;
-color: #333;
-transition: color 0.5s ease-in-out;
+  font-size: 1rem;
+  font-style: italic;
+  color: #333;
+  transition: color 0.5s ease-in-out;
 }
 
 .signature:hover {
-color: #007bff;
+  color: #007bff;
 }
