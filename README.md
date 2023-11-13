@@ -67,6 +67,6 @@ The API has been meticulously designed to retrieve essential data pertaining to 
 ## Video:
 [Demo Video](https://drive.google.com/file/d/1D1AdoiWmMt6uuFHKex8Z_PLZGrzyTPBH/view?usp=sharing)
 
-## Submitted by:
-Shib Kumar Saraf
+## Created by:
+- Name: Shib Kumar Saraf
 - Email ID: shibkumarsaraf2001@gmail.com
