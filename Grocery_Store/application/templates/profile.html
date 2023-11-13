@@ -3,6 +3,7 @@
 <head>
     <title>Grocery Store</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='home_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='signature.css') }}">
 </head>
 <body>
     <h1>Profile</h1>
@@ -42,6 +43,11 @@
         </div>
         {% endfor %}
     </div>
-
+<!-- Signature Container -->
+    <div class="signature-container">
+        <div class="signature">
+            Made with ❤️ by Shib Kumar Saraf
+        </div>
+    </div>
 </body>
 </html>
