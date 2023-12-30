@@ -153,7 +153,8 @@ To run the Grocery Store app, execute the following command in your terminal:
 ```bash
 python app.py  
 ```
-Visit the provided local URL (usually http://localhost:5000) in your web browser to access the app. 
+Visit the provided local URL (usually http://localhost:5000) in your web browser to access the app. <br>
+
 or directly go to deployed server url : https://grocery-store-tk56.onrender.com/
 
 
