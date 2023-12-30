@@ -67,6 +67,55 @@ The API has been meticulously designed to retrieve essential data pertaining to 
 ## Video:
 [Demo Video](https://drive.google.com/file/d/1D1AdoiWmMt6uuFHKex8Z_PLZGrzyTPBH/view?usp=sharing)
 
-## Created by:
-- Name: Shib Kumar Saraf
-- Email ID: shibkumarsaraf2001@gmail.com
+## Getting Started
+
+Before you can run the Grocery Store app, ensure that you have the necessary prerequisites installed on your machine.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Python 3.x](https://www.python.org/downloads/): The programming language used to run the app.
+
+### Installation
+
+Follow these steps to set up the MovieMaven app on your local machine: 
+
+1. **Clone the Repository:**
+
+   Open your terminal and run the following commands:
+
+   ```bash
+   git clone https://github.com/shib1111111/Grocery-Store-App.git
+   cd Grocery Store
+
+   ```
+
+2. **Install Dependencies:**
+
+Run the following command to install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+  ```
+
+## Usage
+To run the Grocery Store app, execute the following command in your terminal:
+```bash
+python app.py  
+```
+Visit the provided local URL (usually http://localhost:5000) in your web browser to access the app. 
+or directly go to deployed server url : https://shib1111111-moviemaven-app-ezbhuv.streamlit.app/
+
+
+## Contributing
+
+We welcome contributions to enhance MovieMaven. Feel free to open issues or submit pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Thank you for using the Grocery Store app ! Feel free to reach out with any questions or feedback.
+
+<em style="color: #ff66b2; font-weight: bold;">✨ --- Designed & made with Love by Shib Kumar Saraf ✨</em>
