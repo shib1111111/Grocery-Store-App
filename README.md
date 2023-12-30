@@ -67,6 +67,26 @@ The API has been meticulously designed to retrieve essential data pertaining to 
 ## Video:
 [Demo Video](https://drive.google.com/file/d/1D1AdoiWmMt6uuFHKex8Z_PLZGrzyTPBH/view?usp=sharing)
 
+## Screenshots
+
+
+<table align="center">
+  <tr>
+    <td><img src="screenshots/index_page.jpg" alt="Index Page" width="800" height="600"/></td>
+  </tr>
+  <tr>
+    <td><em>Index or Login Page</em></td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <td><img src="screenshots/home_page.jpg" alt="Home Page"  align="center" width="800" height="600"/></td>
+  </tr>
+  <tr>
+    <td><em>Home Page </em></td>
+  </tr>
+</table>
 ## Getting Started
 
 Before you can run the Grocery Store app, ensure that you have the necessary prerequisites installed on your machine.
