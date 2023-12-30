@@ -72,28 +72,28 @@ The API has been meticulously designed to retrieve essential data pertaining to 
 
 <table align="center">
   <tr>
-    <td><img src="screenshots/index_page.jpg" alt="Index Page" width="800" height="600"/></td>
+    <td><img src="screenshots/index_page.jpg" alt="Index Page" width="1000" height="600"/></td>
   </tr>
   <tr>
     <td><em>Index or Login Page</em></td>
   </tr>
 
   <tr>
-    <td><img src="screenshots/home_page.jpg" alt="Home Page"  align="center" width="800" height="600"/></td>
+    <td><img src="screenshots/home_page.jpg" alt="Home Page"  align="center" width="1000" height="600"/></td>
   </tr>
   <tr>
     <td><em>Home Page </em></td>
   </tr>
 
   <tr>
-    <td><img src="screenshots/cart.jpg" alt="Cart Page"  align="center" width="800" height="600"/></td>
+    <td><img src="screenshots/cart.jpg" alt="Cart Page"  align="center" width="1000" height="600"/></td>
   </tr>
   <tr>
     <td><em>Cart Page </em></td>
   </tr>
 
   <tr>
-    <td><img src="screenshots/profile.jpg" alt="Profile Page"  align="center" width="800" height="600"/></td>
+    <td><img src="screenshots/profile.jpg" alt="Profile Page"  align="center" width="1000" height="600"/></td>
   </tr>
   <tr>
     <td><em>Profile Page </em></td>
@@ -102,14 +102,14 @@ The API has been meticulously designed to retrieve essential data pertaining to 
 
 <table align="center">
   <tr>
-    <td><img src="screenshots/admin.jpg" alt="Admin Page" width="800" height="600"/></td>
+    <td><img src="screenshots/admin.jpg" alt="Admin Page" width="1000" height="600"/></td>
   </tr>
   <tr>
     <td><em>Admin Page</em></td>
   </tr>
 
   <tr>
-    <td><img src="screenshots/summary.jpg" alt="Summary Page"  align="center" width="800" height="600"/></td>
+    <td><img src="screenshots/summary.jpg" alt="Summary Page"  align="center" width="1000" height="600"/></td>
   </tr>
   <tr>
     <td><em>Sales Summary Page </em></td>
