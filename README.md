@@ -77,16 +77,45 @@ The API has been meticulously designed to retrieve essential data pertaining to 
   <tr>
     <td><em>Index or Login Page</em></td>
   </tr>
-</table>
 
-<table align="center">
   <tr>
     <td><img src="screenshots/home_page.jpg" alt="Home Page"  align="center" width="800" height="600"/></td>
   </tr>
   <tr>
     <td><em>Home Page </em></td>
   </tr>
+
+  <tr>
+    <td><img src="screenshots/cart.jpg" alt="Cart Page"  align="center" width="800" height="600"/></td>
+  </tr>
+  <tr>
+    <td><em>Cart Page </em></td>
+  </tr>
+
+  <tr>
+    <td><img src="screenshots/profile.jpg" alt="Profile Page"  align="center" width="800" height="600"/></td>
+  </tr>
+  <tr>
+    <td><em>Profile Page </em></td>
+  </tr>
 </table>
+
+<table align="center">
+  <tr>
+    <td><img src="screenshots/admin.jpg" alt="Admin Page" width="800" height="600"/></td>
+  </tr>
+  <tr>
+    <td><em>Admin Page</em></td>
+  </tr>
+
+  <tr>
+    <td><img src="screenshots/summary.jpg" alt="Summary Page"  align="center" width="800" height="600"/></td>
+  </tr>
+  <tr>
+    <td><em>Sales Summary Page </em></td>
+  </tr>
+  </table>
+
 ## Getting Started
 
 Before you can run the Grocery Store app, ensure that you have the necessary prerequisites installed on your machine.
