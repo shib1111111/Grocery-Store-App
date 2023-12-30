@@ -79,7 +79,7 @@ Make sure you have the following installed:
 
 ### Installation
 
-Follow these steps to set up the MovieMaven app on your local machine: 
+Follow these steps to set up the Grocery Store app on your local machine: 
 
 1. **Clone the Repository:**
 
@@ -87,7 +87,7 @@ Follow these steps to set up the MovieMaven app on your local machine:
 
    ```bash
    git clone https://github.com/shib1111111/Grocery-Store-App.git
-   cd Grocery Store
+   cd Grocery_Store
 
    ```
 
@@ -105,12 +105,12 @@ To run the Grocery Store app, execute the following command in your terminal:
 python app.py  
 ```
 Visit the provided local URL (usually http://localhost:5000) in your web browser to access the app. 
-or directly go to deployed server url : https://shib1111111-moviemaven-app-ezbhuv.streamlit.app/
+or directly go to deployed server url : https://grocery-store-tk56.onrender.com/
 
 
 ## Contributing
 
-We welcome contributions to enhance MovieMaven. Feel free to open issues or submit pull requests.
+We welcome contributions to enhance Grocery Store app. Feel free to open issues or submit pull requests.
 
 ## License
 
